@@ -1,0 +1,34 @@
+{
+  "author": {
+    "name": "toran billups",
+    "email": "toranb@gmail.com"
+  },
+  "name": "broccoli-ember-hbs-template-compiler",
+  "description": "ember.js precompiler for projects that use broccoli",
+  "version": "1.4.0",
+  "scripts": {
+    "test": "mocha test/**/*.spec.js --reporter tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toranb/broccoli-ember-hbs-template-compiler"
+  },
+  "keywords": [
+    "Ember.js",
+    "Handlebars.js",
+    "Broccoli"
+  ],
+  "main": "index.js",
+  "licenses": [
+    "MIT"
+  ],
+  "dependencies": {
+    "js-string-escape": "^1.0.0",
+    "broccoli-filter": "^0.1.0",
+    "ember-template-compiler": "1.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  },
+  "optionalDependencies": {}
+}
