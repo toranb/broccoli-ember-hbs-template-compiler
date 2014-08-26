@@ -24,6 +24,8 @@ TemplateCompiler.prototype.processString = function (string, relativePath) {
   var template = "Ember.Handlebars.template(" + input + ");\n";
   if (this.options.module === true) {
     return "import Ember from 'ember';\nexport default " + template;
+  } else if (this.options.commonjs === true) {
+    return "var Ember = require('ember');\nmodule.exports = " + template;
   } else {
     return "Ember.TEMPLATES['" + filename + "'] = " + template;
   }

@@ -27,5 +27,11 @@ describe('broccoli-ember-hbs-template-compiler', function() {
     var expected = fs.readFileSync(path.resolve(__dirname, 'expected-module.js')).toString();
     assert(template === expected);
   });
-});
 
+  it('returns a precompiled commonjs template', function() {
+    var filter = new TemplateFilter('templates', {commonjs: true});
+    var template = filter.processString('foo', './templates/foo.hbs');
+    var expected = fs.readFileSync(path.resolve(__dirname, 'expected-commonjs.js')).toString();
+    assert(template === expected);
+  });
+});
