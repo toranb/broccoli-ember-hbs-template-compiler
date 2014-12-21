@@ -20,7 +20,7 @@ TemplateCompiler.prototype.targetExtension = 'js';
 TemplateCompiler.prototype.processString = function (string, relativePath) {
   var extensionRegex = /.handlebars|.hbs/gi;
   var filename = relativePath.toString().split('templates' + path.sep).reverse()[0].replace(extensionRegex, '');
-  var input = compiler.precompile(string);
+  var input = compiler.precompile(string, false);
   var template = "Ember.Handlebars.template(" + input + ");\n";
   if (this.options.module === true) {
     return "import Ember from 'ember';\nexport default " + template;
