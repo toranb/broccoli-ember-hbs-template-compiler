@@ -7,7 +7,8 @@
   "description": "ember.js precompiler for projects that use broccoli",
   "version": "1.7.1-alpha",
   "scripts": {
-    "test": "mocha test/**/*.spec.js --reporter tap"
+    "test": "mocha test/**/*.spec.js --reporter tap",
+    "test:color": "mocha test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
