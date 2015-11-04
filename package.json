@@ -5,7 +5,7 @@
   },
   "name": "broccoli-ember-hbs-template-compiler",
   "description": "ember.js precompiler for projects that use broccoli",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "scripts": {
     "test": "mocha test/**/*.spec.js --reporter tap",
     "test:color": "mocha test/**/*.spec.js"
