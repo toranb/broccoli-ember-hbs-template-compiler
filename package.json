@@ -7,7 +7,8 @@
   "description": "ember.js precompiler for projects that use broccoli",
   "version": "1.7.1-alpha",
   "scripts": {
-    "test": "mocha test/**/*.spec.js --reporter tap"
+    "test": "mocha test/**/*.spec.js --reporter tap",
+    "test:color": "mocha test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
     "MIT"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.6",
+    "broccoli-persistent-filter": "^1.1.4",
     "ember-template-compiler": "^1.9.0-alpha",
     "handlebars": "^2.0.0",
     "js-string-escape": "^1.0.0"
